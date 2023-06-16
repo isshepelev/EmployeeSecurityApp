@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Обновление работника</title>
+</head>
+<body>
+<h1>Обновление работника</h1>
+<form action="/manager/employees/{id}/editEmployee" method="post">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" th:value="${employee.id}" readonly><br><br>
+
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" th:value="${employee.name}" required><br><br>
+
+    <label for="surname">Фамилия:</label>
+    <input type="text" id="surname" name="surname" th:value="${employee.surname}" required><br><br>
+
+    <label for="position">Должность:</label>
+    <input type="text" id="position" name="position" th:value="${employee.position}" required><br><br>
+
+    <label for="salary">Зарплата:</label>
+    <input type="text" id="salary" name="salary" th:value="${employee.salary}" required><br><br>
+
+    <label for="experience">Опыт работы:</label>
+    <input type="text" id="experience" name="experience" th:value="${employee.experience}" required><br><br>
+
+    <label for="age">Возраст:</label>
+    <input type="text" id="age" name="age" th:value="${employee.age}" required><br><br>
+
+    <label for="qualityOfWork">Качество работы:</label>
+    <input type="text" id="qualityOfWork" name="qualityOfWork" th:value="${employee.qualityOfWork}" required><br><br>
+
+    <input type="submit" value="Обновить">
+</form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Информация о работнике</title>
+</head>
+<body>
+<h1>Информация о работнике</h1>
+<table>
+  <tr>
+    <td>Имя:</td>
+    <td th:text="${employee.name}"></td>
+  </tr>
+  <tr>
+    <td>Фамилия:</td>
+    <td th:text="${employee.surname}"></td>
+  </tr>
+  <tr>
+    <td>Должность:</td>
+    <td th:text="${employee.position}"></td>
+  </tr>
+  <tr>
+    <td>Зарплата:</td>
+    <td th:text="${employee.salary}"></td>
+  </tr>
+  <tr>
+    <td>Опыт работы:</td>
+    <td th:text="${employee.experience}"></td>
+  </tr>
+  <tr>
+    <td>Возраст:</td>
+    <td th:text="${employee.age}"></td>
+  </tr>
+  <tr>
+    <td>Оценка качества работы:</td>
+    <td th:text="${employee.qualityOfWork}"></td>
+  </tr>
+</table>
+<br>
+<a href="/employee" class="button">Назад</a>
+</body>
+</html>
