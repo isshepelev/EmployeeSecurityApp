@@ -22,7 +22,7 @@
         <td th:text="${employee.surname}"></td>
         <td th:text="${employee.position}"></td>
         <td>
-            <a th:href="@{/manager/employee/{id}(id=${employee.id})}" class="button">Подробнее...</a>
+            <a th:href="@{/manager/employee/{id}(id=${employee.id})}" class="button">Подробнее</a>
             <a th:href="@{/manager/employee/{id}/edit(id=${employee.id})}" class="button">Редактировать</a>
 
         </td>
