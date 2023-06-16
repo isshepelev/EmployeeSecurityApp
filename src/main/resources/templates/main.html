@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Добро пожаловать!</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #958bf5; /* Непримечательный теплый цвет фона */
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none; /* Добавляем стиль отсутствия подчеркивания */
+      color: #fff; /* Устанавливаем цвет текста */
+    }
+
+    .button-blue {
+      background-color: #ff7f00;
+    }
+
+    .button-green {
+      background-color: #044cfc;
+    }
+
+    .button-red {
+      background-color: #e74c3c;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+<h1 class="fade-in">Добро пожаловать</h1>
+
+<div class="button-container fade-in">
+  <a href="/employee" class="button button-blue">Войти как пользователь</a>
+  <a href="/manager/employee" class="button button-green">Войти как менеджер</a>
+  <a href="/admin/employee" class="button button-red">Войти как администратор</a>
+</div>
+</body>
+</html>
