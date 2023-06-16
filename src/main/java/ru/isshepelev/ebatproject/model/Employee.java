@@ -22,7 +22,7 @@ public class Employee {
     @Column(name = "surname", nullable = false)
     private String surname;
     @Column(name = "salary", nullable = false)
-    private BigDecimal salary;
+    private String salary;
     @Column(name = "position", nullable = false)
     private String position;
 
